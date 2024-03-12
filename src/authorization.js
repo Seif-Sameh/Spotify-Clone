@@ -2,7 +2,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 
 const clientId = "20cdce8310bd486b8dcad7faae5f49e1";
-const redirectUri = "https://spotify-clone-gamma-wheat.vercel.app/home";
+const redirectUri = "https://spotify-clone-git-main-seif-samehs-projects.vercel.app/home";
 const scopes = [
     "user-read-currently-playing",
     "user-read-recently-played",
