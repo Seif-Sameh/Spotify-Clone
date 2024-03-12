@@ -21,8 +21,7 @@ export const categoriesSlice = createSlice({
     extraReducers: (builder) => {
         builder.addCase(fetchCategories.fulfilled, (state, action) => {
             const categories = {...action.payload.categories}
-            const items = categories && categories.items
-            return items
+            return categories
         })
     }
 })

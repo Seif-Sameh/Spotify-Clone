@@ -5,6 +5,8 @@ import CardSection from '../components/CardSection'
 import { removeSearchResult } from '../redux/reducers/search'
 import { IoCloseSharp } from "react-icons/io5";
 import CategoriesSection from '../components/CategoriesSection'
+import { fetchCategories } from '../redux/reducers/categories'
+
 
 
 
@@ -17,6 +19,10 @@ function Search() {
   useEffect(() => {
     dispatch(search({access_token: token, input: searchInput}))
   },[searchInput])
+
+  useEffect(() => {
+    dispatch(fetchCategories(token))
+}, [])
   
   const albums = useSelector((state) => (state.search.albums))
   const artists = useSelector((state) => (state.search.artists))
