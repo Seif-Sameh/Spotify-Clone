@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 import { fetchArtist, removeArtist } from '../redux/reducers/fetchArtist';
 
 
-
-
 function AlbumPage() {
   const album = useSelector((state) => (state.album))
   const token = useSelector((state) => (state.token))

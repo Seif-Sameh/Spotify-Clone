@@ -3,14 +3,13 @@ import Home from "./pages/Home"
 import { useEffect } from "react"
 import {getTokenFromResponse} from './authorization'
 import { useDispatch, useSelector } from "react-redux"
-import {getToken, setToken}  from "./redux/reducers/token"
+import { setToken }  from "./redux/reducers/token"
 import { Route, Routes } from "react-router-dom"
 import Main from "./subpages/Main"
 import Search from "./subpages/Search"
 import AlbumPage from "./subpages/AlbumPage"
 import PlaylistPage from "./subpages/PlaylistPage"
 import ArtistPage from "./subpages/ArtistPage"
-
 
 
 function App() {

@@ -15,7 +15,6 @@ function Card({ item, type }) {
     const src = item && item.images[0]
     const artists = item && item.artists
 
-
     return (
         <div className='w-full min-w-[170px] group bg-lightContainer p-4 flex flex-col  rounded-md gap-2 cursor-pointer transition-colors hover:bg-[#252525]' 
         onClick={() => {

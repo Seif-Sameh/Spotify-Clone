@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+import { useSelector } from 'react-redux'
 
 function CategoriesSection() {
-    const dispatch = useDispatch()
-    const token = useSelector((state) => (state.token))
     const categories = useSelector((state) => (state.categories))
     const items = categories && categories.items
 

@@ -18,7 +18,6 @@ import { BiVolumeFull } from "react-icons/bi";
 import PlayerImageLoader from "../loaders/PlayerImageLoader"
 
 
-
 function Player() {
   const dispatch = useDispatch()
   const token = useSelector((state) => (state.token))

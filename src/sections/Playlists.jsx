@@ -5,8 +5,8 @@ import { EmptyPlaylist } from '../assets/index'
 import { Link } from "react-router-dom";
 import { fetchPlaylist, removePlaylist } from "../redux/reducers/fetchPlaylist";
 
-function Playlists() {
 
+function Playlists() {
     const playlists = useSelector((state) => (state.playlists))
     const dispatch = useDispatch()
     const token = useSelector((state) => (state.token))

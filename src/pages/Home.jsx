@@ -16,7 +16,6 @@ import { Navigate } from "react-router-dom";
 
 
 function Home() {
-
   const [homeIconsState, setHomeIconsState] = useState(true)
   const [searchIconsState, setsearchIconsState] = useState(false)
   const [tokenState, setTokenState ] = useState(true)

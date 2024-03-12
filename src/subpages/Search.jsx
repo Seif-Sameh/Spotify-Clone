@@ -8,14 +8,15 @@ import CategoriesSection from '../components/CategoriesSection'
 import { fetchCategories } from '../redux/reducers/categories'
 
 
-
-
 function Search() {
   const [searchInput, setSearchInput] = useState("")
   const token = useSelector((state) => (state.token))
   const dispatch = useDispatch()   
+  const albums = useSelector((state) => (state.search.albums))
+  const artists = useSelector((state) => (state.search.artists))
+  const tracks = useSelector((state) => (state.search.tracks))
+  const input = useRef(null) 
 
-  
   useEffect(() => {
     dispatch(search({access_token: token, input: searchInput}))
   },[searchInput])
@@ -24,12 +25,6 @@ function Search() {
     dispatch(fetchCategories(token))
 }, [])
   
-  const albums = useSelector((state) => (state.search.albums))
-  const artists = useSelector((state) => (state.search.artists))
-  const tracks = useSelector((state) => (state.search.tracks))
-  
-  
-  const input = useRef(null) 
   if(searchInput == ''){dispatch(removeSearchResult())}
 
   return (
@@ -53,7 +48,6 @@ function Search() {
       {albums&& <CardSection items={albums} title='Albums' type="albums"/>}
       {artists && <CardSection items={artists} title='Artists' type="artists"/>}
       {tracks && <CardSection items={tracks} title='Tracks' type="tracks"/>}
-
     </div>
   )
 }

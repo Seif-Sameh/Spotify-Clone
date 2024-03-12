@@ -1,4 +1,4 @@
-import {LoginLogo} from "../assets"
+import { LoginLogo } from "../assets"
 import { accessUrl } from "../authorization"
 function LoginPage() {
 
