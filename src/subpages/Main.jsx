@@ -21,7 +21,9 @@ function Main() {
             <img src={user.avatar} alt="" className='rounded-full border-black border-2 w-[35px] h-[35px]' />
             <button className='text-sm bg-gray-100 text-black rounded-full py-1 px-3 cursor-pointer active:bg-gray-300 ' onClick={() => {
               dispatch(deleteToken())
-              window.location.pathname = '/login'
+              return(
+                <Navigate to="login" replace={true} />
+              )
             }}>Log out</button>
             </div>
           </div>
