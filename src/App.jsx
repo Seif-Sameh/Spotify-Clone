@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route exact path="login" element={<LoginPage/>}/>
         <Route path="/" element={<Home/>}>
-          <Route path="home" element={<Main/>}/>
+          <Route path="/" element={<Main/>}/>
           <Route path="search" element={<Search/>}/>
           <Route path="album/:id" element={<AlbumPage/>}/>
           <Route path="playlist/:id" element={<PlaylistPage/>}/>
