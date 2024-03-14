@@ -55,7 +55,7 @@ function Home() {
     <div className="flex justify-between p-2 h-[90vh] text-gray-300 ">
       <div className="w-1/3 mr-2 h-full flex flex-col max-lg:hidden" >
         <nav className="rounded-md bg-container p-5 mb-2 flex flex-col gap-3">
-          <Link to='/home'>
+          <Link to='/'>
           <button className="flex items-center hover:text-gray-100 focus:text-gray-100 w-full" onClick={() => {setHomeIconsState(true); setsearchIconsState(false)}}>
             {homeIconsState? <GoHomeFill size={25} /> :<GoHome size={25}/> }
             <p className="text-lg ml-4 font-normal ">Home</p>
